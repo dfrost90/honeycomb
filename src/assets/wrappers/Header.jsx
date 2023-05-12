@@ -9,6 +9,7 @@ const Wrapper = styled.header`
     align-items: center;
     display: grid;
     grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
     padding: 0 40px;
 
     @media (max-width: 1279px) {
@@ -16,7 +17,8 @@ const Wrapper = styled.header`
     }
 
     @media (max-width: 767px) {
-      padding: 20px 0 20px 20px;
+      grid-template-columns: auto auto;
+      padding: 20px;
     }
   }
 `;

@@ -6,7 +6,6 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signOut,
-  getRedirectResult,
   signInWithPopup,
 } from 'firebase/auth';
 import { toast } from 'react-toastify';
