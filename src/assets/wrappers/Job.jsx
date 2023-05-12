@@ -6,10 +6,6 @@ const Wrapper = styled.article`
   position: relative;
   transition: box-shadow 0.3s 0.1s ease-in;
 
-  @media (max-width: 767px) {
-    padding: 10px;
-  }
-
   &:hover {
     box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.067);
   }
@@ -103,6 +99,11 @@ const Wrapper = styled.article`
       object-fit: cover;
       width: 100%;
     }
+
+    @media (max-width: 767px) {
+      height: 80px;
+      width: 80px;
+    }
   }
 
   .features {
@@ -119,6 +120,18 @@ const Wrapper = styled.article`
       &:not(:first-child) {
         margin-left: 20px;
         list-style-type: disc;
+
+        @media (max-width: 767px) {
+          margin-left: 15px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        flex: 1 1 100%;
+        font-size: 14px;
+        list-style-type: disc;
+        margin-left: 15px;
+        margin-top: 5px;
       }
     }
   }
