@@ -47,7 +47,7 @@ const Job = ({
           <div className="title">
             <h5>
               {jobPosition} ({jobModeTitle})
-              {authUser.uid === jobBy && (
+              {authUser?.uid === jobBy && (
                 <>
                   <Link
                     type="button"
